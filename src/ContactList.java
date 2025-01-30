@@ -1,3 +1,4 @@
+// Contact List by Surya De Datta
 import java.util.ArrayList;
 import java.util.Scanner;
 public class ContactList
@@ -170,7 +171,7 @@ public class ContactList
     // Prints the menu and instructions of the program
     public static void printInstructions()
     {
-        System.out.println("Welcome to your Contacts List\nPlease pick from the following menu options\n\nMenu: ");
+        System.out.println("Please pick from the following menu options\n\nMenu: ");
         System.out.println("1. Add Contact");
         System.out.println("2. List All Contacts by First Name");
         System.out.println("3. List All Contacts by Last Name");
@@ -184,6 +185,7 @@ public class ContactList
     // Runs the program
     public void run()
     {
+        System.out.println("Welcome to your Contacts List");
         printInstructions();
         Scanner input = new Scanner(System.in);
         int choice = input.nextInt();
@@ -236,6 +238,10 @@ public class ContactList
         }
 
     }
+    public static void main(String[] args)
+    {
+        ContactList list = new ContactList();
+        list.run();
+    }
 }
-
 
